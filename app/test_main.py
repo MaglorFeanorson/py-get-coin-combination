@@ -24,15 +24,15 @@ def test_get_coin_combination_with_0_cents() -> None:
     assert get_coin_combination(0) == [0, 0, 0, 0], "0 cents"
 
 
-def test_get_coin_combination_with_large_amount() -> None:
-    assert get_coin_combination(99) == [4, 0, 2, 3], (
-        "4 pennies + 2 dimes + 3 quarters"
-    )
-
-
 def test_get_coin_combination_with_large_amount_2() -> None:
     assert get_coin_combination(123) == [3, 0, 2, 4], (
         "3 pennies + 2 dimes + 4 quarters"
+    )
+
+
+def test_get_coin_combination_with_large_amount() -> None:
+    assert get_coin_combination(99) == [4, 0, 2, 3], (
+        "4 pennies + 2 dimes + 3 quarters"
     )
 
 
